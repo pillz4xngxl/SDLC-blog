@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-zinc-950 flex flex-col justify-center items-center">
+
+  <!-- header -->
+  <header class="relative flex flex-col min-h-screen justify-center text-center gap-6 max-w-5xl p-6">
+    <h1 class="text-4xl xl:text-6xl font-bold text-white mb-8">
+      Ciclo de Vida del Desarrollo de <span class="bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Software (SDLC)</span>
+    </h1>
+    <p class="text-neutral-400 text-lg">
+      <span class="font-bold text-neutral-300">¿Qué significa SDLC?</span> El SDLC (Software Development Life Cycle) es una metodología estructurada e iterativa utilizada por los equipos de desarrollo para crear, implementar y mantener sistemas de software de alta calidad de manera eficiente y rentable.
+    </p>
+    <p class="text-neutral-400 text-lg">
+      Esta metodología divide el desarrollo de software en fases diferenciadas, repetibles e interdependientes. Cada fase tiene objetivos y resultados específicos que sirven como base para la siguiente etapa. En conjunto, estas fases forman una hoja de ruta que ayuda a los equipos de desarrollo a crear software que satisfaga las necesidades de las partes interesadas (stakeholders), cumpla con los requisitos del proyecto y responda a las expectativas de los clientes.
+    </p>
+
+    <!-- arrow -->
+    <a href="#cards" class="absolute bottom-6 left-1/2 text-2xl font-bold text-white cursor-pointer">⌄</a>
+  </header>
+
+  <!-- separador -->
+  <hr class="border-t border-neutral-800 m-8 w-full max-w-7xl">
+
+  <!-- cards -->
+  <section id="cards" class="grid xl:grid-cols-2 gap-4 max-w-7xl pt-6">
+
+    <!-- 1. Planificación -->
+    <div class="group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-xl flex gap-6 mx-4 xl:mx-0">
+      <img src="assets/planificacion.webp" alt="Planificación" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-lg object-cover w-42">
+      
+      <div class="px-2 py-6">
+        <h2 class="text-white font-bold text-xl">1. Planificación</h2>
+        <p class="text-neutral-400">
+          En esta fase se definen los objetivos, el alcance y las metas del proyecto. Los stakeholders colaboran para elaborar un plan general que contempla factores como el presupuesto, el cronograma, los recursos disponibles y los posibles riesgos.
+        </p>
+        <p class="text-neutral-400">
+          <span class="text-white font-bold"><br>Objetivo:</span><br> Determinar qué se va a desarrollar y cómo se llevará a cabo.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2. Análisis de requisitos -->
+    <div class="group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-xl flex gap-6 mx-4 xl:mx-0">
+      <img src="assets/analisis.webp" alt="Análisis" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-lg object-cover w-42">
+      
+      <div class="px-2 py-6">
+        <h2 class="text-white font-bold text-xl">2. Análisis de requisitos</h2>
+        <p class="text-neutral-400">
+          Durante esta etapa, el equipo recopila y documenta los requisitos funcionales y no funcionales del software.<br><br>Este proceso incluye:<br>- Comprender las necesidades de los usuarios.<br>- Identificar restricciones del sistema.<br>- Definir características y funcionalidades esperadas.<br>- Establecer criterios de claridad y rendimiento.
+        </p>
+        <p class="text-neutral-400">
+          <span class="text-white font-bold"><br>Objetivo:</span><br> Definir claramente qué debe hacer el sistema.
+        </p>
+      </div>
+    </div>
+
+    <!-- 3. Diseño -->
+    <div class="group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-xl flex gap-6 mx-4 xl:mx-0">
+      <img src="assets/diseño.webp" alt="Diseño" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-lg object-cover w-42">
+      
+      <div class="px-2 py-6">
+        <h2 class="text-white font-bold text-xl">3. Diseño</h2>
+        <p class="text-neutral-400">
+          En la fase de diseño, los requisitos se transforman en una especificación técnica detallada.<br><br>Las actividades más comunes incluyen:<br>- Creación de wireframes.<br>- Elaboración de maquetas o prototipos.<br>- Diseño de bases de datos.<br>- Elaboración de diagramas arquitectónicos.<br>- Definición de la estructura y composiciónmn del sistema.
+        </p>
+        <p class="text-neutral-400">
+          <span class="text-white font-bold"><br>Objetivo:</span><br> Establecer cómo será construido el software.
+        </p>
+      </div>
+    </div>
+
+    <!-- 4. Desarrollo -->
+    <div class="group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-xl flex gap-6 mx-4 xl:mx-0">
+      <img src="assets/desarrollo.jpg" alt="Desarrollo" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-lg object-cover w-42">
+      
+      <div class="px-2 py-6">
+        <h2 class="text-white font-bold text-xl">4. Desarrollo</h2>
+        <p class="text-neutral-400">
+          En esta etapa se realiza la programación del sistema.<br><br>Los desarrolladores utilizan las especificaciones de diseño para:<br>- Escribir el código fuente.<br>- Construir módulos y funcionalidades.<br>- Integrar componentes del sistema.<br>- Implementar bibliotecas y herramientas necesarias.
+        </p>
+        <p class="text-neutral-400">
+          <span class="text-white font-bold"><br>Objetivo:</span><br> Convertir el diseño en un producto funcional.
+        </p>
+      </div>
+    </div>
+    
+    <!-- 5. Pruebas -->
+    <div class="group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-xl flex gap-6 mx-4 xl:mx-0">
+      <img src="assets/pruebas.webp" alt="Pruebas" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-lg object-cover w-42">
+        
+      <div class="px-2 py-6">
+          <h2 class="text-white font-bold text-xl">5. Pruebas</h2>
+          <p class="text-neutral-400">
+            Durante la fase de pruebas, el software se evalúa para detectar errores y verificar que cumpla con los requisitos establecidos.<br><br>Entre las pruebas más comunes se encuentran:<br>- Pruebas unitarias.<br>- Pruebas de integración.<br>- Pruebas de sistema.<br>- Pruebas de aceptación del usuario.
+          </p>
+          <p class="text-neutral-400">
+            <span class="text-white font-bold"><br>Objetivo:</span><br> Garantizar la calidad y el correcto funcionamiento del software.
+          </p>
+        </div>
+    </div>
+
+    <!-- 6. Despliegue -->
+    <div class="group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-xl flex gap-6 mx-4 xl:mx-0">
+      <img src="assets/despliegue.jpg" alt="Despliegue" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-lg object-cover w-42">
+      
+      <div class="px-2 py-6">
+        <h2 class="text-white font-bold text-xl">6. Despliegue</h2>
+        <p class="text-neutral-400">
+          Una vez que el software ha superado las pruebas, se procede a su implementación y puesta en funcionamiento.<br><br>El despliegue suele realizarse mediante:<br>- Lanzamiento completo del sistema.<br>- Actualizaciones graduales o incrementales.<br>- Implementaciones por fases.
+        </p>
+        <p class="text-neutral-400">
+          <span class="text-white font-bold"><br>Objetivo:</span><br> Entregar el software a los usuarios finales.
+        </p>
+      </div>
+    </div>
+
+    <!-- 7. Mantenimiento -->
+    <div class="group hover:border-purple-500/30 hover:shadow-[0_0_30px_rgba(139,92,246,0.25)] transition duration-300 xl:col-span-2 bg-zinc-900/60 border border-neutral-700/80 rounded-xl flex gap-6 mx-4 xl:mx-0">
+      <img src="assets/Mantenimiento.webp" alt="Mantenimiento" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-lg object-cover w-42">
+      
+      <div class="px-2 py-6">
+      <h2 class="text-white font-bold text-xl">7. Mantenimiento</h2>
+        <p class="text-neutral-400">
+          El mantenimiento es la fase final del SDLC y continúa durante toda la vida útil del software.<br><br>Las actividades principales incluyen:<br>- Corrección de errores.<br>- Actualizacion del sistema.<br>- Optimización del rendimiento.<br>- Implementación de nuevas funcionalidades.<br>Corrección de vulnerabilidades de seguridad.
+        </p>
+        <p class="text-neutral-400">
+          <span class="text-white font-bold"><br>Objetivo:</span><br> Garantizar que el software siga siendo útil, seguro y eficiente a lo largo del tiempo.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- separador -->
+  <hr class="border-t border-neutral-800 m-12 w-full max-w-7xl">
+
+  <!-- conclusión -->
+  <section>
+    <div class="max-w-5xl p-6">
+      <h2 class="text-white font-bold text-3xl mb-4">Conclusión</h2>
+      <p class="text-neutral-400 text-lg">
+        El SDLC proporciona un marco estructurado para el desarrollo de software, asegurando que cada fase se complete de manera eficiente y efectiva. Al seguir este ciclo, los equipos de desarrollo pueden crear software de alta calidad que cumpla con las expectativas de los usuarios y se mantenga relevante a lo largo del tiempo.
+      </p>
+    </div>
+  </section>
+
+</body>
+
+<footer class="text-white bg-zinc-900 border-t border-neutral-700/80 py-6 mt-12 w-full">
+  <div class="max-w-7xl mx-auto px-4">
+    <p class="text-neutral-400 text-sm">
+      &copy; 2026 SDLC Blog. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+</html>
