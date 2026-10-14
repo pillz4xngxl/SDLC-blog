@@ -1,31 +1,35 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="scroll-smooth" lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <title>SDLC Blog | Ciclo de vida del desarrollo de software</title>
+  <meta name="description" content="Guía sobre las 7 fases del ciclo de vida del desarrollo de software (SDLC): planificación, análisis, diseño, desarrollo, pruebas, despliegue y mantenimiento.">
 </head>
-<body class="bg-zinc-950 flex flex-col justify-center items-center">
+
+<body class="bg-zinc-950">
+  <main class="flex flex-col justify-center items-center px-4">
 
   <!-- navbar -->
-  <nav class="overflow-hidden fixed top-0 max-w-7xl bg-neutral-900/50 backdrop-blur-sm border border-neutral-700/80 rounded-3xl flex justify-between items-center gap-6 py-4 px-8 m-4 w-full z-50">
+  <nav class="overflow-hidden fixed top-0 max-w-7xl bg-neutral-900/50 backdrop-blur-sm border border-neutral-700/80 rounded-3xl flex justify-between items-center gap-6 py-4 px-6 m-4 w-full z-50">
     <a href="#" class="text-neutral-300 font-bold text-md"><span class="text-lg bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">SDLC</span> Blog</a>
     <div class="flex gap-6">
       <a href="#" class="text-neutral-400 hover:text-neutral-200 transition duration-300">Inicio</a>
-      <a href="#cards" class="text-neutral-400 hover:text-neutral-200 transition duration-300">Fases</a>
-      <a href="#conclusion" class="text-neutral-400 hover:text-neutral-200 transition duration-300">Conclusión</a>
-      <a href="#about" class="text-neutral-400 hover:text-neutral-200 transition duration-300">Acerca de</a>
+      <a href="#phases" class="text-neutral-400 hover:text-neutral-200 transition duration-300">Fases</a>
+      <a href="#videos" class="text-neutral-400 hover:text-neutral-200 transition duration-300">Videos</a>
+      <a href="about.html" class="text-neutral-400 hover:text-neutral-200 transition duration-300">Acerca de</a>
     </div>
   </nav>
 
   <!-- comments button -->
-  <a href="#comments" class="flex gap-3 fixed bottom-4 right-4 bg-neutral-900/50 backdrop-blur-sm hover:bg-linear-to-r hover:from-blue-400 hover:to-purple-500 text-white font-bold p-4 rounded-full shadow-lg z-50 transition duration-300">
+  <a href="comments.html" class="flex gap-3 fixed bottom-4 right-4 bg-neutral-900/50 backdrop-blur-sm hover:bg-linear-to-r hover:from-blue-400 hover:to-purple-500 text-white font-bold p-4 rounded-full shadow-lg z-50 transition duration-300">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
     Comentarios
   </a>
 
   <!-- header -->
-  <header class="relative flex flex-col min-h-screen justify-center text-center gap-6 max-w-5xl p-6">
+  <header class="relative flex flex-col min-h-screen justify-center text-center gap-6 max-w-5xl p-2">
     <div class="group hover:-translate-y-1 transition duration-500">
       <h1 class="text-4xl xl:text-6xl font-bold text-white mb-8 mt-16 sm:mt-0">
         Ciclo de Vida del Desarrollo de <span class="bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Software (SDLC)</span>
@@ -39,17 +43,17 @@
     </div>
 
     <!-- arrow -->
-    <a href="#cards" class="hidden md:block absolute hover:scale-120 transition duration-300 bottom-6 left-1/2 text-4xl font-bold text-white cursor-pointer">⌄</a>
+    <a href="#phases" class="hidden md:block absolute hover:scale-120 transition duration-300 bottom-6 left-1/2 text-4xl font-bold text-white cursor-pointer">⌄</a>
   </header>
 
   <!-- separador -->
   <hr class="border-t border-neutral-800 m-8 w-full max-w-7xl">
 
   <!-- cards -->
-  <section id="cards" class="grid grid-cols-1 gap-4 max-w-6xl pt-6">
+  <section id="phases" class="grid grid-cols-1 gap-4 max-w-6xl pt-6">
 
     <!-- 1. Planificación -->
-    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 mx-4 xl:mx-0">
+    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 xl:mx-0">
       <img src="assets/planificacion.webp" alt="Planificación" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-3xl object-cover w-42">
       
       <div class="p-6 w-full">
@@ -65,7 +69,7 @@
     </div>
 
     <!-- 2. Análisis de requisitos -->
-    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 mx-4 xl:mx-0">
+    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 xl:mx-0">
       <img src="assets/analisis.webp" alt="Análisis" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-3xl object-cover w-42">
       
       <div class="p-6 w-full">
@@ -86,8 +90,8 @@
     </div>
 
     <!-- 3. Diseño -->
-    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 mx-4 xl:mx-0">
-      <img src="assets/diseño.webp" alt="Diseño" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-3xl object-cover w-42">
+    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 xl:mx-0">
+      <img src="assets/diseno.webp" alt="Diseño" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-3xl object-cover w-42">
       
       <div class="p-6 w-full">
         <svg class="p-2 h-12 w-12 text-violet-400 bg-linear-to-r from-purple-400/10 to-blue-500/10 rounded-lg mb-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /></svg>
@@ -99,7 +103,7 @@
           - Elaboración de maquetas o prototipos.<br>
           - Diseño de bases de datos.<br>
           - Elaboración de diagramas arquitectónicos.<br>
-          - Definición de la estructura y composiciónmn del sistema.
+          - Definición de la estructura y composición del sistema.
         </p>
         <p class="text-neutral-400 group-hover:text-neutral-200 transition duration-300 bg-linear-to-r from-purple-400/10 to-blue-500/10 rounded-3xl mt-4 p-4 pt-0 w-full">
           <span class="text-violet-400 font-bold"><br>Objetivo:</span><br> Establecer cómo será construido el software.
@@ -108,7 +112,7 @@
     </div>
 
     <!-- 4. Desarrollo -->
-    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 mx-4 xl:mx-0">
+    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 xl:mx-0">
       <img src="assets/desarrollo.jpg" alt="Desarrollo" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-3xl object-cover w-42">
       
       <div class="p-6 w-full">
@@ -129,7 +133,7 @@
     </div>
     
     <!-- 5. Pruebas -->
-    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 mx-4 xl:mx-0">
+    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 xl:mx-0">
       <img src="assets/pruebas.webp" alt="Pruebas" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-3xl object-cover w-42">
         
       <div class="p-6 w-full">
@@ -150,7 +154,7 @@
     </div>
 
     <!-- 6. Despliegue -->
-    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 mx-4 xl:mx-0">
+    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 xl:mx-0">
       <img src="assets/despliegue.jpg" alt="Despliegue" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-3xl object-cover w-42">
       
       <div class="p-6 w-full">
@@ -170,7 +174,7 @@
     </div>
 
     <!-- 7. Mantenimiento -->
-    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 mx-4 xl:mx-0">
+    <div class="group xl:hover:-translate-y-1 transition duration-300 bg-zinc-900/60 border border-neutral-700/80 rounded-3xl flex gap-6 xl:mx-0">
       <img src="assets/mantenimiento.webp" alt="Mantenimiento" class="opacity-50 group-hover:opacity-100 transition duration-300 hidden md:block h-full rounded-l-3xl object-cover w-42">
       
       <div class="p-6 w-full">
@@ -198,7 +202,7 @@
 
   <!-- conclusión -->
   <section id="conclusion">
-    <div class="max-w-5xl p-6">
+    <div class="max-w-5xl p-4">
       <h2 class="text-white font-bold text-3xl mb-4">Conclusión</h2>
       <p class="text-neutral-400 text-lg">
         El SDLC proporciona un marco estructurado para el desarrollo de software, asegurando que cada fase se complete de manera eficiente y efectiva. Al seguir este ciclo, los equipos de desarrollo pueden crear software de alta calidad que cumpla con las expectativas de los usuarios y se mantenga relevante a lo largo del tiempo.
@@ -206,13 +210,27 @@
     </div>
   </section>
 
-</body>
+  <!-- separador -->
+  <hr class="border-t border-neutral-800 m-12 w-full max-w-7xl">
 
-<footer class="text-white bg-zinc-900 border-t border-neutral-700/80 py-6 mt-12 w-full">
+  <!-- videos -->
+  <section id="videos" class="hover:-translate-y-1 transition duration-300 w-full max-w-6xl bg-linear-to-r from-violet-400/10 to-blue-500/10 p-6 my-4 rounded-2xl">
+    <h2 class="text-white font-bold text-2xl mb-4">Videos recomendados</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/beb8qlDHxO8" title="Video 1" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/NQ5fMOhGVmo" title="Video 2" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="text-white bg-zinc-900 border-t border-neutral-700/80 py-6 mt-12 w-full">
   <div class="max-w-7xl mx-auto px-4">
     <p class="text-neutral-400 text-sm">
       &copy; 2026 SDLC Blog. Todos los derechos reservados.
     </p>
   </div>
 </footer>
+
+</body>
 </html>
